@@ -1,0 +1,135 @@
+
+/* Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaf0f8;
+
+    background:
+        radial-gradient(circle at top left, #090058 0, transparent 40%),
+        #080d18;
+}
+
+/* Cartão principal */
+.cartao {
+    width: 100%;
+    max-width: 650px;
+    padding: 32px;
+
+    background: rgba(11, 1, 24, 0.96);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Cabeçalho */
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.topo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: #000000;
+}
+
+.identificacao h1 {
+    margin-bottom: 8px;
+    letter-spacing: -0.7px;
+}
+
+.identificacao p {
+    color: #b2ee8f;
+}
+
+/* Separador */
+.separador {
+    height: 1px;
+    margin: 28px 0;
+    background: linear-gradient(
+        to right,
+    #ffffff,#ffffff,#ffffff,#293b54, transparent
+    );
+}
+
+/* Sobre mim */
+.sobre h2,
+.competencias h2 {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.sobre p {
+    color: #b9c5d5;
+    font-size: 0.85rem;
+    line-height: 1.50rem;
+}
+
+/* Competências */
+.competencias {
+    margin-top: 30px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 15px;
+
+    background: #170020;
+    color: #ffffff;
+    border: 1px solid  #3b0252;
+    border-radius: 10px;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    transition: background 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.tags span:hover {
+    color: #c6e2ff;
+    background: #05005c;
+    border-color: #0600b9;;
+}
+
+/* Rodapé */
+.rodape {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #ffffff;
+
+    color: #ffffff;
+    font-size: 0.70rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
